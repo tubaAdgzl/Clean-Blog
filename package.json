@@ -1,0 +1,26 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "Clean Blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tubaAdgzl/Clean-Blog.git"
+  },
+  "author": "Tuba Adıgüzel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tubaAdgzl/Clean-Blog/issues"
+  },
+  "homepage": "https://github.com/tubaAdgzl/Clean-Blog#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
