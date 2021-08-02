@@ -2,17 +2,18 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 mongoose.connect("mongodb://localhost/cleanblog-test-db",{
-    useNewUrlParser:true,
-    useUnifiedTopology:true
+    useNewUrlParser: true,
+    useUnifiedTopology: true 
 })
 
+//create schema 
 const PostSchema = new Schema({
-    title: String,
-    detail: String,
+    title:String,
+    detail:String,
     dateCreated:{
         type:Date,
         default:Date.now
-    }
+    },
 })
 
 const Post = mongoose.model("Post",PostSchema)
