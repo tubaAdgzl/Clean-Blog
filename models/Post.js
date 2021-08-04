@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 mongoose.connect("mongodb://localhost/cleanblog-test-db",{
     useNewUrlParser: true,
-    useUnifiedTopology: true 
+    useUnifiedTopology: true,
+    useFindAndModify:false
 })
 
 //create schema 
