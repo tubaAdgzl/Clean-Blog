@@ -27,15 +27,19 @@
   <article>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-         
+        <div class=" offset-1 col-lg-11 col-md-10 mx-auto">
           <h2 class="section-heading"><%= post.title %></h2>
-
           <p><%= post.detail %></p>
           <p class="text-muted"><%= post.dateCreated %></p>
-          <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
+          <div class="tm-bg-gray tm-share-box">
+            <div class="text-center">
+              <a href="/posts/edit/<%= post._id %>" class="btn btn-primary p-0 mb-4 tm-btn-animate tm-btn-download tm-icon-download"><span>Update Details</span></a>	
+            </div>	
+            <div class="text-center">
+              <a href="/posts/<%= post._id %>?_method=DELETE"
+                onclick="return confirm('Are you sure?')" class="btn btn-danger p-0 tm-btn-animate tm-btn-download tm-icon-download"><span>Delete Photo</span></a>	
+            </div>								
+          </div>	
           <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
 
         </div>
